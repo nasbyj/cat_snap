@@ -1,56 +1,6 @@
 \set ECHO none
- count 
--------
-    13
-(1 row)
-
-          Table "_cat_snap.entity"
-      Column      |    Type     | Modifiers 
-------------------+-------------+-----------
- entity           | text        | not null
- entity_type      | entity_type | not null
- attributes       | attribute[] | not null
- extra_attributes | attribute[] | 
- delta_keys       | text[]      | 
- delta_counters   | text[]      | 
- delta_fields     | text[]      | 
-Indexes:
-    "entity_pkey" PRIMARY KEY, btree (entity)
-
-    Composite type "cat_snap.raw_type"
-     Column     |     Type     | Modifiers 
-----------------+--------------+-----------
- xmin           | xid          | 
- oid            | oid          | 
- typname        | text         | 
- typnamespace   | oid          | 
- typowner       | oid          | 
- typlen         | smallint     | 
- typbyval       | boolean      | 
- typtype        | "char"       | 
- typcategory    | "char"       | 
- typispreferred | boolean      | 
- typisdefined   | boolean      | 
- typdelim       | "char"       | 
- typrelid       | oid          | 
- typelem        | oid          | 
- typarray       | oid          | 
- typinput       | regproc      | 
- typoutput      | regproc      | 
- typreceive     | regproc      | 
- typsend        | regproc      | 
- typmodin       | regproc      | 
- typmodout      | regproc      | 
- typanalyze     | regproc      | 
- typalign       | "char"       | 
- typstorage     | "char"       | 
- typnotnull     | boolean      | 
- typbasetype    | oid          | 
- typtypmod      | integer      | 
- typndims       | integer      | 
- typcollation   | oid          | 
- typdefaultbin  | pg_node_tree | 
- typdefault     | text         | 
- typacl         | aclitem[]    | 
-
+13
+1..2
+ok 1 - Schema pg_temp should not exist
+ok 2 - Schema __cat_snap should not exist
 # TRANSACTION INTENTIONALLY LEFT OPEN!
