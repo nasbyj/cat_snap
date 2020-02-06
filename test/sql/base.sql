@@ -1,10 +1,7 @@
 \set ECHO none
 
-\i test/pgxntool/setup.sql
+\i test/setup.sql
 
-CREATE TEMP VIEW versions AS
-  SELECT * FROM unnest('{9.2,9.3,9.4,9.5,9.6}'::numeric[]) u(version)
-;
 CREATE TEMP VIEW entity_ver AS
   SELECT entity, version
     FROM versions, _cat_snap.entity
