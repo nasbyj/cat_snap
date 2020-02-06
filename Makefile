@@ -15,6 +15,7 @@ meta/entity.sql: common/types.sql
 
 .PHONY: generated
 generated: $(GENERATED)
+
 .PHONY: meta
 meta: generated
 all: generated
@@ -22,6 +23,7 @@ all: generated
 # IF YOU CHANGE EITHER OF THESE, make sure to update generated/README
 generated/%.sql: meta/%.sql | $(call extension_control,cat_tools)
 	@echo 'Generating $@ from $<'
+	ls -la $@ $<
 	@echo '-- THIS IS A GENERATED FILE. DO NOT EDIT!' > $@
 	@echo >> $@
 	@psql -qt -P format=unaligned --no-psqlrc -v ON_ERROR_STOP=1 -f $< >> $@
