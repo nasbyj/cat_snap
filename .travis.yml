@@ -15,3 +15,4 @@ env:
 script: bash ./pg-travis-pgxn.sh
 
 # vi: expandtab ts=2 sw=2
+
