@@ -80,7 +80,7 @@ $template$
 END
 $body$;
 
-CREATE FUNCTION pg_temp.exec(
+CREATE FUNCTION __cat_snap.exec(
   sql text
 ) RETURNS void LANGUAGE plpgsql AS $$
 BEGIN
@@ -88,7 +88,7 @@ BEGIN
 END
 $$;
 
-SELECT count( pg_temp.exec( _cat_snap.delta_code(
+SELECT count( __cat_snap.exec( _cat_snap.delta_code(
       replace(entity, 'pg_', 'raw_'), attributes || extra_attributes, delta_keys, delta_counters, delta_fields
     ) ) )
   FROM _cat_snap.entity
