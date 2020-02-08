@@ -1,0 +1,20 @@
+\set ECHO none
+1..17
+ok 1 - Composite type cat_snap.snapshot_all should exist
+ok 2 - Composite type cat_snap.snapshot_catalog should exist
+ok 3 - Composite type cat_snap.snapshot_other_status should exist
+ok 4 - Composite type cat_snap.snapshot_stats_file should exist
+ok 5 - SELECT cat_snap.snapshot_code('9.2', cluster_identifier := 'cluster id')
+ok 6 - SELECT cat_snap.snapshot_code('9.3', cluster_identifier := 'cluster id')
+ok 7 - SELECT cat_snap.snapshot_code('9.4', cluster_identifier := 'cluster id')
+ok 8 - SELECT cat_snap.snapshot_code('9.5', cluster_identifier := 'cluster id')
+ok 9 - SELECT cat_snap.snapshot_code('9.6', cluster_identifier := 'cluster id')
+ok 10 - INSERT INTO code SELECT 'all', 'snapshot_all', 'cat_snap.snapshot_code(10, snapshot_type := ''all'', raw := true)', cat_snap.snapshot_code(10, snapshot_type := 'all', raw := true)
+ok 11 - INSERT INTO code SELECT 'catalog', 'snapshot_catalog', 'cat_snap.snapshot_code(10, snapshot_type := ''catalog'', raw := true)', cat_snap.snapshot_code(10, snapshot_type := 'catalog', raw := true)
+ok 12 - INSERT INTO code SELECT 'other_status', 'snapshot_other_status', 'cat_snap.snapshot_code(10, snapshot_type := ''other_status'', raw := true)', cat_snap.snapshot_code(10, snapshot_type := 'other_status', raw := true)
+ok 13 - INSERT INTO code SELECT 'stats_file', 'snapshot_stats_file', 'cat_snap.snapshot_code(10, snapshot_type := ''stats_file'', raw := true)', cat_snap.snapshot_code(10, snapshot_type := 'stats_file', raw := true)
+ok 14 - cast a version 10 all snapshot to cat_snap.snapshot_all
+ok 15 - cast a version 10 catalog snapshot to cat_snap.snapshot_catalog
+ok 16 - cast a version 10 other_status snapshot to cat_snap.snapshot_other_status
+ok 17 - cast a version 10 stats_file snapshot to cat_snap.snapshot_stats_file
+# TRANSACTION INTENTIONALLY LEFT OPEN!

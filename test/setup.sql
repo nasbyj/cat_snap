@@ -1,5 +1,6 @@
 \i test/pgxntool/setup.sql
 
+-- TODO: create cat_snap.supported_versions() function
 CREATE TEMP VIEW versions AS
   SELECT * FROM unnest('{9.2,9.3,9.4,9.5,9.6}'::numeric[]) u(version)
 ;

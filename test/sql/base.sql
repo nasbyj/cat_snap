@@ -65,9 +65,6 @@ SELECT plan(
   -- pg_stat_activity
   +1  -- waiting
   +(SELECT count(*)::int FROM gather_code_expected)
-
-  -- snapshot_all
-  +(SELECT count(*)::int FROM versions)
 );
 
 SELECT is(
@@ -109,12 +106,6 @@ SELECT is(
       , 'Verify gather code for ' || version || ' pg_stat_activity'
     )
   FROM gather_code_expected
-;
-
-SELECT lives_ok(
-  format( $$SELECT cat_snap.snapshot_code(%L, cluster_identifier := 'cluster id')$$, version )
-  , format( $$SELECT cat_snap.snapshot_code(%L, cluster_identifier := 'cluster id')$$, version )
-) FROM versions
 ;
 
 \i test/pgxntool/finish.sql
