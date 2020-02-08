@@ -515,3 +515,4 @@ CREATE TABLE _cat_snap.catalog(
  INSERT INTO _cat_snap.catalog VALUES( 9.6, 'pg_user_mappings', '{"(umid,oid)","(srvid,oid)","(srvname,name)","(umuser,oid)","(usename,name)","(umoptions,text[])"}' );
  INSERT INTO _cat_snap.catalog VALUES( 9.6, 'pg_views', '{"(schemaname,name)","(viewname,name)","(viewowner,name)","(definition,text)"}' );
 
+

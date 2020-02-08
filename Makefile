@@ -20,6 +20,11 @@ generated: $(GENERATED)
 meta: generated
 all: generated
 
+# There's a quirk where a git checkout might have meta/*.sh scripts at a newer
+# timestamp than the *.dmp files. One way to fix this might be
+# https://www.cmcrossroads.com/article/rebuilding-when-files-checksum-changes
+# but that's meant for solving the other problem (timestamp prevents a build).
+
 # IF YOU CHANGE EITHER OF THESE, make sure to update generated/README
 generated/%.sql: meta/%.sql | $(call extension_control,cat_tools)
 	@echo 'Generating $@ from $<'
