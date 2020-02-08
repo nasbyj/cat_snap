@@ -52,7 +52,7 @@ SELECT lives_ok(
 -- Sadly, can only do this for our current major :(
 SELECT lives_ok(
     format( 'INSERT INTO code SELECT %L, %L, %L, %s', snapshot_type, composite_type, call, call )
-    , format( 'INSERT INTO code SELECT %L, %L, %L, %s', snapshot_type, composite_type, call, call )
+    , format( 'insert code for a %s snapshot into code table', snapshot_type )
   )
   FROM (
     SELECT *
@@ -67,8 +67,8 @@ SELECT lives_ok(
 SELECT lives_ok(
       format( 'SELECT (%s)::text::%s.%s', code, :'schema', composite_type )
       , format(
-        'cast a version %s %s snapshot to %s.%s'
-        , :major_version, snapshot_type, :'schema', composite_type
+        'cast a %s snapshot to %s.%s'
+        , snapshot_type, :'schema', composite_type
       )
     )
   FROM code
