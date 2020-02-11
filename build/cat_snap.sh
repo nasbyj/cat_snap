@@ -26,6 +26,7 @@ SET search_path = _cat_snap, cat_snap;
 _EOF_
 
 echo_cat generated/entity.dmp
+echo_cat common/type_functions.sql
 
 echo '-- THIS IS A GENERATED FILE. DO NOT EDIT!'
 echo '-- Generated from generated/types.sql'

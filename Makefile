@@ -12,6 +12,8 @@ BUILD_SCRIPTS = $(wildcard build/*.sql)
 generated/types.sql: generated/entity.dmp
 meta/entity.sh: common/types.sql
 meta/entity.sql: common/types.sql
+meta/types.sql: common/type_functions.sql
+build/cat_snap.sh: common/type_functions.sql
 
 .PHONY: generated
 generated: $(GENERATED)
@@ -24,6 +26,7 @@ all: generated
 # timestamp than the *.dmp files. One way to fix this might be
 # https://www.cmcrossroads.com/article/rebuilding-when-files-checksum-changes
 # but that's meant for solving the other problem (timestamp prevents a build).
+# For now, simply stick a stupid sleep 1 in here to force the timestamps to differ. :(
 
 # IF YOU CHANGE EITHER OF THESE, make sure to update generated/README
 generated/%.sql: meta/%.sql | $(call extension_control,cat_tools)
@@ -31,6 +34,7 @@ generated/%.sql: meta/%.sql | $(call extension_control,cat_tools)
 	@echo '-- THIS IS A GENERATED FILE. DO NOT EDIT!' > $@
 	@echo >> $@
 	@psql -qt -P format=unaligned --no-psqlrc -v ON_ERROR_STOP=1 -f $< >> $@
+	@sleep 1
 
 generated/%.dmp: meta/%.sh meta/%* | $(call extension_control,cat_tools)
 	@echo 'Generating $@ from $<'
@@ -42,6 +46,7 @@ generated/%.dmp: meta/%.sh meta/%* | $(call extension_control,cat_tools)
 	@$< >> $@
 	@test -r $@
 	@test `cat $@ | wc -l` -gt 40
+	@sleep 1
 
 .PHONY: genclean
 genclean: clean

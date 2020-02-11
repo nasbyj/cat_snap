@@ -15,11 +15,16 @@ BEGIN
     $$SELECT row(%s) FROM pg_catalog.%s$$
     , array_to_string(
       array(
-        SELECT CASE WHEN array[attribute_name] <@ array(SELECT attribute_name FROM unnest(c.attributes))
-              THEN attribute_name
+        SELECT CASE WHEN array[aa.attribute_name] <@ array(SELECT attribute_name FROM unnest(c.attributes))
+              THEN aa.attribute_name
               ELSE 'NULL'
-              END
-          FROM unnest(e.attributes || e.extra_attributes)
+              END ||
+            CASE WHEN m.corrected_type IS NOT NULL
+              THEN '::' || m.corrected_type
+            ELSE ''
+            END
+          FROM unnest(e.attributes || e.extra_attributes) aa
+            LEFT JOIN _cat_snap.entity_type_mapping_v m ON m.base_type = aa.attribute_type
       )
       , ', '
     )
@@ -63,7 +68,10 @@ DECLARE
 %1$s$$
 ;
 
-  c_template_all_final CONSTANT text := $$SELECT %s;$$;
+  c_template_all_final CONSTANT text := $$BEGIN;
+  SET LOCAL search_path = '';
+  SELECT %s;
+ROLLBACK;$$;
   c_template_partial_final CONSTANT text := $$%1$sSELECT %s$$;
 BEGIN
   IF c_snapshot_type NOT IN ( 'all', 'catalog', 'stats_file', 'other_status' ) THEN

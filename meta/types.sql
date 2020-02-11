@@ -4,12 +4,13 @@ CREATE EXTENSION IF NOT EXISTS cat_tools;
 
 BEGIN;
 \i generated/entity.dmp
+\i common/type_functions.sql
 
 SELECT format(
         $$CREATE TYPE %s AS (%s);$$
-        , replace( entity, 'pg_', 'raw_' )
+        , type_name__raw(entity)
         , array_to_string(
-            base
+            corrected
             , ', '
         )
     )
@@ -17,7 +18,7 @@ SELECT format(
 ;
 SELECT format(
         $$CREATE TYPE %s AS (%s);$$
-        , replace( entity, 'pg_', 'delta_' )
+        , type_name__delta(entity)
         , array_to_string(
             delta || intervals
             , ', '
@@ -28,18 +29,18 @@ SELECT format(
 ;
 
 SELECT format(
-$$CREATE TYPE snapshot_%s AS (
+$$CREATE TYPE %s AS (
     snapshot_version     int
     , %s
     , %s
 );$$
-    , replace( lower(entity_type::text), ' ', '_' )
+    , type_name__snapshot(entity_type)
     , CASE WHEN entity_type = 'Stats File' THEN 'snapshot_timestamp     timestamptz'
         ELSE 'transaction_start     timestamptz
     , clock_timestamp        timestamptz'
     END
     , array_to_string(
-        array( SELECT entity || ' ' || replace(entity, 'pg_', 'raw_') || '[]' FROM entity WHERE entity_type = t.entity_type ORDER BY entity )
+        array( SELECT entity || ' ' || type_name__raw(entity) || '[]' FROM entity WHERE entity_type = t.entity_type ORDER BY entity )
         , E'\n    , '
     )
 )

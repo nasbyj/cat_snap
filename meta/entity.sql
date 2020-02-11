@@ -68,6 +68,7 @@ SELECT
           row(
             attname
             , CASE
+              -- TOOD: treat these the same as pg_node_tree (see entity.sh and common/types.sql
               WHEN column_type IN ( 'name', 'anyarray' ) THEN 'text'
               ELSE column_type
             END
