@@ -70,8 +70,7 @@ SELECT lives_ok(
         , raw_composite
       )
     , format(
-      $$Verify cat_snap.gather_code((%s, %L) can cast to text[]::%s.%s[]$$
-        , :major_version
+      $$Verify cat_snap.gather_code(<major>, %L) can cast to text[]::%s.%s[]$$
         , entity
         , :'schema'
         , raw_composite
