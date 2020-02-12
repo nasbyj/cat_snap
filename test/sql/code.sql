@@ -11,9 +11,16 @@ CREATE TEMP VIEW version__snapshot_types AS SELECT *
   FROM versions, snapshot_types
 ;
 CREATE TEMP VIEW entity_types AS
-  SELECT entity, _cat_snap.type_name__raw( entity ) AS raw_composite
-    FROM _cat_snap.entity
+  SELECT e.entity, _cat_snap.type_name__raw( entity ) AS raw_composite
+      , EXISTS(
+          SELECT 1
+            FROM _cat_snap.catalog c
+            WHERE c.entity = e.entity
+              AND version = :major_version
+          ) AS exists_in_version
+    FROM _cat_snap.entity e
     WHERE entity NOT IN (SELECT snapshot_type FROM snapshot_types)
+    ORDER BY entity
 ;
 
 CREATE TEMP TABLE code(
@@ -63,12 +70,15 @@ SELECT has_composite( :'schema', snapshot_composite
  * itself won't be.
  */
 SELECT lives_ok(
-    format(
-        $$SELECT array(%s)::text[]::%s.%s[]$$
-        , cat_snap.gather_code(:'major_version', entity)
-        , :'schema'
-        , raw_composite
-      )
+    CASE WHEN exists_in_version THEN
+      format(
+          $$SELECT array(%s)::text[]::%s.%s[]$$
+          , cat_snap.gather_code(:'major_version', entity)
+          , :'schema'
+          , raw_composite
+        )
+      ELSE 'SELECT 1'
+      END
     , format(
       $$Verify cat_snap.gather_code(<major>, %L) can cast to text[]::%s.%s[]$$
         , entity
