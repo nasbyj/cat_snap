@@ -72,7 +72,7 @@ SELECT has_composite( :'schema', snapshot_composite
 SELECT lives_ok(
     CASE WHEN exists_in_version THEN
       format(
-          $$SELECT array(%s)::text[]::%s.%s[]$$
+          $$SELECT %s::text[]::%s.%s[]$$
           , cat_snap.gather_code(:'major_version', entity)
           , :'schema'
           , raw_composite
@@ -111,6 +111,12 @@ SELECT lives_ok(
         FROM snapshot_types
   ) a
 ;
+
+/*
+SELECT format( 'SELECT (%s)::text::%s.%s', code, :'schema', snapshot_composite )
+  FROM code
+;
+*/
 
 SELECT lives_ok(
       format( 'SELECT (%s)::text::%s.%s', code, :'schema', snapshot_composite )

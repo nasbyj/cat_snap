@@ -13,70 +13,70 @@ ok 10 - Composite type cat_snap.raw_cast should exist
 ok 11 - Composite type cat_snap.raw_class should exist
 ok 12 - Composite type cat_snap.raw_collation should exist
 ok 13 - Composite type cat_snap.raw_config should exist
-ok 14 - Composite type cat_snap.raw_init_privs should exist
-ok 15 - Composite type cat_snap.raw_language should exist
-ok 16 - Composite type cat_snap.raw_ts_config_map should exist
-ok 17 - Composite type cat_snap.raw_constraint should exist
-ok 18 - Composite type cat_snap.raw_conversion should exist
-ok 19 - Composite type cat_snap.raw_cursors should exist
-ok 20 - Composite type cat_snap.raw_database should exist
-ok 21 - Composite type cat_snap.raw_db_role_setting should exist
-ok 22 - Composite type cat_snap.raw_default_acl should exist
-ok 23 - Composite type cat_snap.raw_depend should exist
-ok 24 - Composite type cat_snap.raw_description should exist
-ok 25 - Composite type cat_snap.raw_enum should exist
-ok 26 - Composite type cat_snap.raw_event_trigger should exist
-ok 27 - Composite type cat_snap.raw_extension should exist
-ok 28 - Composite type cat_snap.raw_file_settings should exist
-ok 29 - Composite type cat_snap.raw_foreign_data_wrapper should exist
-ok 30 - Composite type cat_snap.raw_foreign_server should exist
-ok 31 - Composite type cat_snap.raw_foreign_table should exist
-ok 32 - Composite type cat_snap.raw_index should exist
-ok 33 - Composite type cat_snap.raw_inherits should exist
-ok 34 - Composite type cat_snap.raw_rules should exist
-ok 35 - Composite type cat_snap.raw_locks should exist
-ok 36 - Composite type cat_snap.raw_namespace should exist
-ok 37 - Composite type cat_snap.raw_opclass should exist
-ok 38 - Composite type cat_snap.raw_operator should exist
-ok 39 - Composite type cat_snap.raw_opfamily should exist
-ok 40 - Composite type cat_snap.raw_pltemplate should exist
-ok 41 - Composite type cat_snap.raw_policy should exist
-ok 42 - Composite type cat_snap.raw_prepared_statements should exist
-ok 43 - Composite type cat_snap.raw_prepared_xacts should exist
-ok 44 - Composite type cat_snap.raw_proc should exist
-ok 45 - Composite type cat_snap.raw_range should exist
-ok 46 - Composite type cat_snap.raw_replication_origin should exist
-ok 47 - Composite type cat_snap.raw_replication_origin_status should exist
-ok 48 - Composite type cat_snap.raw_replication_slots should exist
-ok 49 - Composite type cat_snap.raw_rewrite should exist
-ok 50 - Composite type cat_snap.raw_roles should exist
-ok 51 - Composite type cat_snap.raw_seclabel should exist
-ok 52 - Composite type cat_snap.raw_seclabels should exist
-ok 53 - Composite type cat_snap.raw_settings should exist
-ok 54 - Composite type cat_snap.raw_shdepend should exist
-ok 55 - Composite type cat_snap.raw_shdescription should exist
-ok 56 - Composite type cat_snap.raw_shseclabel should exist
-ok 57 - Composite type cat_snap.raw_stat_activity should exist
-ok 58 - Composite type cat_snap.raw_stat_all_indexes should exist
-ok 59 - Composite type cat_snap.raw_stat_all_tables should exist
-ok 60 - Composite type cat_snap.raw_stat_archiver should exist
-ok 61 - Composite type cat_snap.raw_stat_bgwriter should exist
-ok 62 - Composite type cat_snap.raw_trigger should exist
-ok 63 - Composite type cat_snap.raw_stat_database should exist
-ok 64 - Composite type cat_snap.raw_stat_database_conflicts should exist
-ok 65 - Composite type cat_snap.raw_stat_progress_vacuum should exist
-ok 66 - Composite type cat_snap.raw_stat_replication should exist
-ok 67 - Composite type cat_snap.raw_stat_ssl should exist
-ok 68 - Composite type cat_snap.raw_stat_user_functions should exist
-ok 69 - Composite type cat_snap.raw_stat_wal_receiver should exist
-ok 70 - Composite type cat_snap.raw_statio_all_indexes should exist
-ok 71 - Composite type cat_snap.raw_statio_all_sequences should exist
-ok 72 - Composite type cat_snap.raw_statio_all_tables should exist
-ok 73 - Composite type cat_snap.raw_tablespace should exist
-ok 74 - Composite type cat_snap.raw_timezone_abbrevs should exist
-ok 75 - Composite type cat_snap.raw_timezone_names should exist
-ok 76 - Composite type cat_snap.raw_transform should exist
-ok 77 - Composite type cat_snap.raw_ts_config should exist
+ok 14 - Composite type cat_snap.raw_constraint should exist
+ok 15 - Composite type cat_snap.raw_conversion should exist
+ok 16 - Composite type cat_snap.raw_cursors should exist
+ok 17 - Composite type cat_snap.raw_database should exist
+ok 18 - Composite type cat_snap.raw_db_role_setting should exist
+ok 19 - Composite type cat_snap.raw_default_acl should exist
+ok 20 - Composite type cat_snap.raw_depend should exist
+ok 21 - Composite type cat_snap.raw_description should exist
+ok 22 - Composite type cat_snap.raw_enum should exist
+ok 23 - Composite type cat_snap.raw_event_trigger should exist
+ok 24 - Composite type cat_snap.raw_extension should exist
+ok 25 - Composite type cat_snap.raw_file_settings should exist
+ok 26 - Composite type cat_snap.raw_foreign_data_wrapper should exist
+ok 27 - Composite type cat_snap.raw_foreign_server should exist
+ok 28 - Composite type cat_snap.raw_foreign_table should exist
+ok 29 - Composite type cat_snap.raw_index should exist
+ok 30 - Composite type cat_snap.raw_inherits should exist
+ok 31 - Composite type cat_snap.raw_init_privs should exist
+ok 32 - Composite type cat_snap.raw_language should exist
+ok 33 - Composite type cat_snap.raw_locks should exist
+ok 34 - Composite type cat_snap.raw_namespace should exist
+ok 35 - Composite type cat_snap.raw_opclass should exist
+ok 36 - Composite type cat_snap.raw_operator should exist
+ok 37 - Composite type cat_snap.raw_opfamily should exist
+ok 38 - Composite type cat_snap.raw_pltemplate should exist
+ok 39 - Composite type cat_snap.raw_policy should exist
+ok 40 - Composite type cat_snap.raw_prepared_statements should exist
+ok 41 - Composite type cat_snap.raw_prepared_xacts should exist
+ok 42 - Composite type cat_snap.raw_proc should exist
+ok 43 - Composite type cat_snap.raw_range should exist
+ok 44 - Composite type cat_snap.raw_replication_origin should exist
+ok 45 - Composite type cat_snap.raw_replication_origin_status should exist
+ok 46 - Composite type cat_snap.raw_replication_slots should exist
+ok 47 - Composite type cat_snap.raw_rewrite should exist
+ok 48 - Composite type cat_snap.raw_roles should exist
+ok 49 - Composite type cat_snap.raw_rules should exist
+ok 50 - Composite type cat_snap.raw_seclabel should exist
+ok 51 - Composite type cat_snap.raw_seclabels should exist
+ok 52 - Composite type cat_snap.raw_settings should exist
+ok 53 - Composite type cat_snap.raw_shdepend should exist
+ok 54 - Composite type cat_snap.raw_shdescription should exist
+ok 55 - Composite type cat_snap.raw_shseclabel should exist
+ok 56 - Composite type cat_snap.raw_stat_activity should exist
+ok 57 - Composite type cat_snap.raw_stat_all_indexes should exist
+ok 58 - Composite type cat_snap.raw_stat_all_tables should exist
+ok 59 - Composite type cat_snap.raw_stat_archiver should exist
+ok 60 - Composite type cat_snap.raw_stat_bgwriter should exist
+ok 61 - Composite type cat_snap.raw_stat_database should exist
+ok 62 - Composite type cat_snap.raw_stat_database_conflicts should exist
+ok 63 - Composite type cat_snap.raw_stat_progress_vacuum should exist
+ok 64 - Composite type cat_snap.raw_stat_replication should exist
+ok 65 - Composite type cat_snap.raw_stat_ssl should exist
+ok 66 - Composite type cat_snap.raw_stat_user_functions should exist
+ok 67 - Composite type cat_snap.raw_stat_wal_receiver should exist
+ok 68 - Composite type cat_snap.raw_statio_all_indexes should exist
+ok 69 - Composite type cat_snap.raw_statio_all_sequences should exist
+ok 70 - Composite type cat_snap.raw_statio_all_tables should exist
+ok 71 - Composite type cat_snap.raw_tablespace should exist
+ok 72 - Composite type cat_snap.raw_timezone_abbrevs should exist
+ok 73 - Composite type cat_snap.raw_timezone_names should exist
+ok 74 - Composite type cat_snap.raw_transform should exist
+ok 75 - Composite type cat_snap.raw_trigger should exist
+ok 76 - Composite type cat_snap.raw_ts_config should exist
+ok 77 - Composite type cat_snap.raw_ts_config_map should exist
 ok 78 - Composite type cat_snap.raw_ts_dict should exist
 ok 79 - Composite type cat_snap.raw_ts_parser should exist
 ok 80 - Composite type cat_snap.raw_ts_template should exist
@@ -86,88 +86,88 @@ ok 83 - Composite type cat_snap.snapshot_all should exist
 ok 84 - Composite type cat_snap.snapshot_catalog should exist
 ok 85 - Composite type cat_snap.snapshot_other_status should exist
 ok 86 - Composite type cat_snap.snapshot_stats_file should exist
-ok 87 - Verify cat_snap.gather_code((9.6, 'pg_aggregate') can cast to text[]::cat_snap.raw_aggregate[]
-ok 88 - Verify cat_snap.gather_code((9.6, 'pg_am') can cast to text[]::cat_snap.raw_am[]
-ok 89 - Verify cat_snap.gather_code((9.6, 'pg_amop') can cast to text[]::cat_snap.raw_amop[]
-ok 90 - Verify cat_snap.gather_code((9.6, 'pg_amproc') can cast to text[]::cat_snap.raw_amproc[]
-ok 91 - Verify cat_snap.gather_code((9.6, 'pg_attrdef') can cast to text[]::cat_snap.raw_attrdef[]
-ok 92 - Verify cat_snap.gather_code((9.6, 'pg_attribute') can cast to text[]::cat_snap.raw_attribute[]
-ok 93 - Verify cat_snap.gather_code((9.6, 'pg_auth_members') can cast to text[]::cat_snap.raw_auth_members[]
-ok 94 - Verify cat_snap.gather_code((9.6, 'pg_available_extension_versions') can cast to text[]::cat_snap.raw_available_extension_versions[]
-ok 95 - Verify cat_snap.gather_code((9.6, 'pg_available_extensions') can cast to text[]::cat_snap.raw_available_extensions[]
-ok 96 - Verify cat_snap.gather_code((9.6, 'pg_cast') can cast to text[]::cat_snap.raw_cast[]
-ok 97 - Verify cat_snap.gather_code((9.6, 'pg_class') can cast to text[]::cat_snap.raw_class[]
-ok 98 - Verify cat_snap.gather_code((9.6, 'pg_collation') can cast to text[]::cat_snap.raw_collation[]
-ok 99 - Verify cat_snap.gather_code((9.6, 'pg_config') can cast to text[]::cat_snap.raw_config[]
-ok 100 - Verify cat_snap.gather_code((9.6, 'pg_init_privs') can cast to text[]::cat_snap.raw_init_privs[]
-ok 101 - Verify cat_snap.gather_code((9.6, 'pg_language') can cast to text[]::cat_snap.raw_language[]
-ok 102 - Verify cat_snap.gather_code((9.6, 'pg_ts_config_map') can cast to text[]::cat_snap.raw_ts_config_map[]
-ok 103 - Verify cat_snap.gather_code((9.6, 'pg_constraint') can cast to text[]::cat_snap.raw_constraint[]
-ok 104 - Verify cat_snap.gather_code((9.6, 'pg_conversion') can cast to text[]::cat_snap.raw_conversion[]
-ok 105 - Verify cat_snap.gather_code((9.6, 'pg_cursors') can cast to text[]::cat_snap.raw_cursors[]
-ok 106 - Verify cat_snap.gather_code((9.6, 'pg_database') can cast to text[]::cat_snap.raw_database[]
-ok 107 - Verify cat_snap.gather_code((9.6, 'pg_db_role_setting') can cast to text[]::cat_snap.raw_db_role_setting[]
-ok 108 - Verify cat_snap.gather_code((9.6, 'pg_default_acl') can cast to text[]::cat_snap.raw_default_acl[]
-ok 109 - Verify cat_snap.gather_code((9.6, 'pg_depend') can cast to text[]::cat_snap.raw_depend[]
-ok 110 - Verify cat_snap.gather_code((9.6, 'pg_description') can cast to text[]::cat_snap.raw_description[]
-ok 111 - Verify cat_snap.gather_code((9.6, 'pg_enum') can cast to text[]::cat_snap.raw_enum[]
-ok 112 - Verify cat_snap.gather_code((9.6, 'pg_event_trigger') can cast to text[]::cat_snap.raw_event_trigger[]
-ok 113 - Verify cat_snap.gather_code((9.6, 'pg_extension') can cast to text[]::cat_snap.raw_extension[]
-ok 114 - Verify cat_snap.gather_code((9.6, 'pg_file_settings') can cast to text[]::cat_snap.raw_file_settings[]
-ok 115 - Verify cat_snap.gather_code((9.6, 'pg_foreign_data_wrapper') can cast to text[]::cat_snap.raw_foreign_data_wrapper[]
-ok 116 - Verify cat_snap.gather_code((9.6, 'pg_foreign_server') can cast to text[]::cat_snap.raw_foreign_server[]
-ok 117 - Verify cat_snap.gather_code((9.6, 'pg_foreign_table') can cast to text[]::cat_snap.raw_foreign_table[]
-ok 118 - Verify cat_snap.gather_code((9.6, 'pg_index') can cast to text[]::cat_snap.raw_index[]
-ok 119 - Verify cat_snap.gather_code((9.6, 'pg_inherits') can cast to text[]::cat_snap.raw_inherits[]
-ok 120 - Verify cat_snap.gather_code((9.6, 'pg_rules') can cast to text[]::cat_snap.raw_rules[]
-ok 121 - Verify cat_snap.gather_code((9.6, 'pg_locks') can cast to text[]::cat_snap.raw_locks[]
-ok 122 - Verify cat_snap.gather_code((9.6, 'pg_namespace') can cast to text[]::cat_snap.raw_namespace[]
-ok 123 - Verify cat_snap.gather_code((9.6, 'pg_opclass') can cast to text[]::cat_snap.raw_opclass[]
-ok 124 - Verify cat_snap.gather_code((9.6, 'pg_operator') can cast to text[]::cat_snap.raw_operator[]
-ok 125 - Verify cat_snap.gather_code((9.6, 'pg_opfamily') can cast to text[]::cat_snap.raw_opfamily[]
-ok 126 - Verify cat_snap.gather_code((9.6, 'pg_pltemplate') can cast to text[]::cat_snap.raw_pltemplate[]
-ok 127 - Verify cat_snap.gather_code((9.6, 'pg_policy') can cast to text[]::cat_snap.raw_policy[]
-ok 128 - Verify cat_snap.gather_code((9.6, 'pg_prepared_statements') can cast to text[]::cat_snap.raw_prepared_statements[]
-ok 129 - Verify cat_snap.gather_code((9.6, 'pg_prepared_xacts') can cast to text[]::cat_snap.raw_prepared_xacts[]
-ok 130 - Verify cat_snap.gather_code((9.6, 'pg_proc') can cast to text[]::cat_snap.raw_proc[]
-ok 131 - Verify cat_snap.gather_code((9.6, 'pg_range') can cast to text[]::cat_snap.raw_range[]
-ok 132 - Verify cat_snap.gather_code((9.6, 'pg_replication_origin') can cast to text[]::cat_snap.raw_replication_origin[]
-ok 133 - Verify cat_snap.gather_code((9.6, 'pg_replication_origin_status') can cast to text[]::cat_snap.raw_replication_origin_status[]
-ok 134 - Verify cat_snap.gather_code((9.6, 'pg_replication_slots') can cast to text[]::cat_snap.raw_replication_slots[]
-ok 135 - Verify cat_snap.gather_code((9.6, 'pg_rewrite') can cast to text[]::cat_snap.raw_rewrite[]
-ok 136 - Verify cat_snap.gather_code((9.6, 'pg_roles') can cast to text[]::cat_snap.raw_roles[]
-ok 137 - Verify cat_snap.gather_code((9.6, 'pg_seclabel') can cast to text[]::cat_snap.raw_seclabel[]
-ok 138 - Verify cat_snap.gather_code((9.6, 'pg_seclabels') can cast to text[]::cat_snap.raw_seclabels[]
-ok 139 - Verify cat_snap.gather_code((9.6, 'pg_settings') can cast to text[]::cat_snap.raw_settings[]
-ok 140 - Verify cat_snap.gather_code((9.6, 'pg_shdepend') can cast to text[]::cat_snap.raw_shdepend[]
-ok 141 - Verify cat_snap.gather_code((9.6, 'pg_shdescription') can cast to text[]::cat_snap.raw_shdescription[]
-ok 142 - Verify cat_snap.gather_code((9.6, 'pg_shseclabel') can cast to text[]::cat_snap.raw_shseclabel[]
-ok 143 - Verify cat_snap.gather_code((9.6, 'pg_stat_activity') can cast to text[]::cat_snap.raw_stat_activity[]
-ok 144 - Verify cat_snap.gather_code((9.6, 'pg_stat_all_indexes') can cast to text[]::cat_snap.raw_stat_all_indexes[]
-ok 145 - Verify cat_snap.gather_code((9.6, 'pg_stat_all_tables') can cast to text[]::cat_snap.raw_stat_all_tables[]
-ok 146 - Verify cat_snap.gather_code((9.6, 'pg_stat_archiver') can cast to text[]::cat_snap.raw_stat_archiver[]
-ok 147 - Verify cat_snap.gather_code((9.6, 'pg_stat_bgwriter') can cast to text[]::cat_snap.raw_stat_bgwriter[]
-ok 148 - Verify cat_snap.gather_code((9.6, 'pg_trigger') can cast to text[]::cat_snap.raw_trigger[]
-ok 149 - Verify cat_snap.gather_code((9.6, 'pg_stat_database') can cast to text[]::cat_snap.raw_stat_database[]
-ok 150 - Verify cat_snap.gather_code((9.6, 'pg_stat_database_conflicts') can cast to text[]::cat_snap.raw_stat_database_conflicts[]
-ok 151 - Verify cat_snap.gather_code((9.6, 'pg_stat_progress_vacuum') can cast to text[]::cat_snap.raw_stat_progress_vacuum[]
-ok 152 - Verify cat_snap.gather_code((9.6, 'pg_stat_replication') can cast to text[]::cat_snap.raw_stat_replication[]
-ok 153 - Verify cat_snap.gather_code((9.6, 'pg_stat_ssl') can cast to text[]::cat_snap.raw_stat_ssl[]
-ok 154 - Verify cat_snap.gather_code((9.6, 'pg_stat_user_functions') can cast to text[]::cat_snap.raw_stat_user_functions[]
-ok 155 - Verify cat_snap.gather_code((9.6, 'pg_stat_wal_receiver') can cast to text[]::cat_snap.raw_stat_wal_receiver[]
-ok 156 - Verify cat_snap.gather_code((9.6, 'pg_statio_all_indexes') can cast to text[]::cat_snap.raw_statio_all_indexes[]
-ok 157 - Verify cat_snap.gather_code((9.6, 'pg_statio_all_sequences') can cast to text[]::cat_snap.raw_statio_all_sequences[]
-ok 158 - Verify cat_snap.gather_code((9.6, 'pg_statio_all_tables') can cast to text[]::cat_snap.raw_statio_all_tables[]
-ok 159 - Verify cat_snap.gather_code((9.6, 'pg_tablespace') can cast to text[]::cat_snap.raw_tablespace[]
-ok 160 - Verify cat_snap.gather_code((9.6, 'pg_timezone_abbrevs') can cast to text[]::cat_snap.raw_timezone_abbrevs[]
-ok 161 - Verify cat_snap.gather_code((9.6, 'pg_timezone_names') can cast to text[]::cat_snap.raw_timezone_names[]
-ok 162 - Verify cat_snap.gather_code((9.6, 'pg_transform') can cast to text[]::cat_snap.raw_transform[]
-ok 163 - Verify cat_snap.gather_code((9.6, 'pg_ts_config') can cast to text[]::cat_snap.raw_ts_config[]
-ok 164 - Verify cat_snap.gather_code((9.6, 'pg_ts_dict') can cast to text[]::cat_snap.raw_ts_dict[]
-ok 165 - Verify cat_snap.gather_code((9.6, 'pg_ts_parser') can cast to text[]::cat_snap.raw_ts_parser[]
-ok 166 - Verify cat_snap.gather_code((9.6, 'pg_ts_template') can cast to text[]::cat_snap.raw_ts_template[]
-ok 167 - Verify cat_snap.gather_code((9.6, 'pg_type') can cast to text[]::cat_snap.raw_type[]
-ok 168 - Verify cat_snap.gather_code((9.6, 'pg_user_mapping') can cast to text[]::cat_snap.raw_user_mapping[]
+ok 87 - Verify cat_snap.gather_code(<major>, 'pg_aggregate') can cast to text[]::cat_snap.raw_aggregate[]
+ok 88 - Verify cat_snap.gather_code(<major>, 'pg_am') can cast to text[]::cat_snap.raw_am[]
+ok 89 - Verify cat_snap.gather_code(<major>, 'pg_amop') can cast to text[]::cat_snap.raw_amop[]
+ok 90 - Verify cat_snap.gather_code(<major>, 'pg_amproc') can cast to text[]::cat_snap.raw_amproc[]
+ok 91 - Verify cat_snap.gather_code(<major>, 'pg_attrdef') can cast to text[]::cat_snap.raw_attrdef[]
+ok 92 - Verify cat_snap.gather_code(<major>, 'pg_attribute') can cast to text[]::cat_snap.raw_attribute[]
+ok 93 - Verify cat_snap.gather_code(<major>, 'pg_auth_members') can cast to text[]::cat_snap.raw_auth_members[]
+ok 94 - Verify cat_snap.gather_code(<major>, 'pg_available_extension_versions') can cast to text[]::cat_snap.raw_available_extension_versions[]
+ok 95 - Verify cat_snap.gather_code(<major>, 'pg_available_extensions') can cast to text[]::cat_snap.raw_available_extensions[]
+ok 96 - Verify cat_snap.gather_code(<major>, 'pg_cast') can cast to text[]::cat_snap.raw_cast[]
+ok 97 - Verify cat_snap.gather_code(<major>, 'pg_class') can cast to text[]::cat_snap.raw_class[]
+ok 98 - Verify cat_snap.gather_code(<major>, 'pg_collation') can cast to text[]::cat_snap.raw_collation[]
+ok 99 - Verify cat_snap.gather_code(<major>, 'pg_config') can cast to text[]::cat_snap.raw_config[]
+ok 100 - Verify cat_snap.gather_code(<major>, 'pg_constraint') can cast to text[]::cat_snap.raw_constraint[]
+ok 101 - Verify cat_snap.gather_code(<major>, 'pg_conversion') can cast to text[]::cat_snap.raw_conversion[]
+ok 102 - Verify cat_snap.gather_code(<major>, 'pg_cursors') can cast to text[]::cat_snap.raw_cursors[]
+ok 103 - Verify cat_snap.gather_code(<major>, 'pg_database') can cast to text[]::cat_snap.raw_database[]
+ok 104 - Verify cat_snap.gather_code(<major>, 'pg_db_role_setting') can cast to text[]::cat_snap.raw_db_role_setting[]
+ok 105 - Verify cat_snap.gather_code(<major>, 'pg_default_acl') can cast to text[]::cat_snap.raw_default_acl[]
+ok 106 - Verify cat_snap.gather_code(<major>, 'pg_depend') can cast to text[]::cat_snap.raw_depend[]
+ok 107 - Verify cat_snap.gather_code(<major>, 'pg_description') can cast to text[]::cat_snap.raw_description[]
+ok 108 - Verify cat_snap.gather_code(<major>, 'pg_enum') can cast to text[]::cat_snap.raw_enum[]
+ok 109 - Verify cat_snap.gather_code(<major>, 'pg_event_trigger') can cast to text[]::cat_snap.raw_event_trigger[]
+ok 110 - Verify cat_snap.gather_code(<major>, 'pg_extension') can cast to text[]::cat_snap.raw_extension[]
+ok 111 - Verify cat_snap.gather_code(<major>, 'pg_file_settings') can cast to text[]::cat_snap.raw_file_settings[]
+ok 112 - Verify cat_snap.gather_code(<major>, 'pg_foreign_data_wrapper') can cast to text[]::cat_snap.raw_foreign_data_wrapper[]
+ok 113 - Verify cat_snap.gather_code(<major>, 'pg_foreign_server') can cast to text[]::cat_snap.raw_foreign_server[]
+ok 114 - Verify cat_snap.gather_code(<major>, 'pg_foreign_table') can cast to text[]::cat_snap.raw_foreign_table[]
+ok 115 - Verify cat_snap.gather_code(<major>, 'pg_index') can cast to text[]::cat_snap.raw_index[]
+ok 116 - Verify cat_snap.gather_code(<major>, 'pg_inherits') can cast to text[]::cat_snap.raw_inherits[]
+ok 117 - Verify cat_snap.gather_code(<major>, 'pg_init_privs') can cast to text[]::cat_snap.raw_init_privs[]
+ok 118 - Verify cat_snap.gather_code(<major>, 'pg_language') can cast to text[]::cat_snap.raw_language[]
+ok 119 - Verify cat_snap.gather_code(<major>, 'pg_locks') can cast to text[]::cat_snap.raw_locks[]
+ok 120 - Verify cat_snap.gather_code(<major>, 'pg_namespace') can cast to text[]::cat_snap.raw_namespace[]
+ok 121 - Verify cat_snap.gather_code(<major>, 'pg_opclass') can cast to text[]::cat_snap.raw_opclass[]
+ok 122 - Verify cat_snap.gather_code(<major>, 'pg_operator') can cast to text[]::cat_snap.raw_operator[]
+ok 123 - Verify cat_snap.gather_code(<major>, 'pg_opfamily') can cast to text[]::cat_snap.raw_opfamily[]
+ok 124 - Verify cat_snap.gather_code(<major>, 'pg_pltemplate') can cast to text[]::cat_snap.raw_pltemplate[]
+ok 125 - Verify cat_snap.gather_code(<major>, 'pg_policy') can cast to text[]::cat_snap.raw_policy[]
+ok 126 - Verify cat_snap.gather_code(<major>, 'pg_prepared_statements') can cast to text[]::cat_snap.raw_prepared_statements[]
+ok 127 - Verify cat_snap.gather_code(<major>, 'pg_prepared_xacts') can cast to text[]::cat_snap.raw_prepared_xacts[]
+ok 128 - Verify cat_snap.gather_code(<major>, 'pg_proc') can cast to text[]::cat_snap.raw_proc[]
+ok 129 - Verify cat_snap.gather_code(<major>, 'pg_range') can cast to text[]::cat_snap.raw_range[]
+ok 130 - Verify cat_snap.gather_code(<major>, 'pg_replication_origin') can cast to text[]::cat_snap.raw_replication_origin[]
+ok 131 - Verify cat_snap.gather_code(<major>, 'pg_replication_origin_status') can cast to text[]::cat_snap.raw_replication_origin_status[]
+ok 132 - Verify cat_snap.gather_code(<major>, 'pg_replication_slots') can cast to text[]::cat_snap.raw_replication_slots[]
+ok 133 - Verify cat_snap.gather_code(<major>, 'pg_rewrite') can cast to text[]::cat_snap.raw_rewrite[]
+ok 134 - Verify cat_snap.gather_code(<major>, 'pg_roles') can cast to text[]::cat_snap.raw_roles[]
+ok 135 - Verify cat_snap.gather_code(<major>, 'pg_rules') can cast to text[]::cat_snap.raw_rules[]
+ok 136 - Verify cat_snap.gather_code(<major>, 'pg_seclabel') can cast to text[]::cat_snap.raw_seclabel[]
+ok 137 - Verify cat_snap.gather_code(<major>, 'pg_seclabels') can cast to text[]::cat_snap.raw_seclabels[]
+ok 138 - Verify cat_snap.gather_code(<major>, 'pg_settings') can cast to text[]::cat_snap.raw_settings[]
+ok 139 - Verify cat_snap.gather_code(<major>, 'pg_shdepend') can cast to text[]::cat_snap.raw_shdepend[]
+ok 140 - Verify cat_snap.gather_code(<major>, 'pg_shdescription') can cast to text[]::cat_snap.raw_shdescription[]
+ok 141 - Verify cat_snap.gather_code(<major>, 'pg_shseclabel') can cast to text[]::cat_snap.raw_shseclabel[]
+ok 142 - Verify cat_snap.gather_code(<major>, 'pg_stat_activity') can cast to text[]::cat_snap.raw_stat_activity[]
+ok 143 - Verify cat_snap.gather_code(<major>, 'pg_stat_all_indexes') can cast to text[]::cat_snap.raw_stat_all_indexes[]
+ok 144 - Verify cat_snap.gather_code(<major>, 'pg_stat_all_tables') can cast to text[]::cat_snap.raw_stat_all_tables[]
+ok 145 - Verify cat_snap.gather_code(<major>, 'pg_stat_archiver') can cast to text[]::cat_snap.raw_stat_archiver[]
+ok 146 - Verify cat_snap.gather_code(<major>, 'pg_stat_bgwriter') can cast to text[]::cat_snap.raw_stat_bgwriter[]
+ok 147 - Verify cat_snap.gather_code(<major>, 'pg_stat_database') can cast to text[]::cat_snap.raw_stat_database[]
+ok 148 - Verify cat_snap.gather_code(<major>, 'pg_stat_database_conflicts') can cast to text[]::cat_snap.raw_stat_database_conflicts[]
+ok 149 - Verify cat_snap.gather_code(<major>, 'pg_stat_progress_vacuum') can cast to text[]::cat_snap.raw_stat_progress_vacuum[]
+ok 150 - Verify cat_snap.gather_code(<major>, 'pg_stat_replication') can cast to text[]::cat_snap.raw_stat_replication[]
+ok 151 - Verify cat_snap.gather_code(<major>, 'pg_stat_ssl') can cast to text[]::cat_snap.raw_stat_ssl[]
+ok 152 - Verify cat_snap.gather_code(<major>, 'pg_stat_user_functions') can cast to text[]::cat_snap.raw_stat_user_functions[]
+ok 153 - Verify cat_snap.gather_code(<major>, 'pg_stat_wal_receiver') can cast to text[]::cat_snap.raw_stat_wal_receiver[]
+ok 154 - Verify cat_snap.gather_code(<major>, 'pg_statio_all_indexes') can cast to text[]::cat_snap.raw_statio_all_indexes[]
+ok 155 - Verify cat_snap.gather_code(<major>, 'pg_statio_all_sequences') can cast to text[]::cat_snap.raw_statio_all_sequences[]
+ok 156 - Verify cat_snap.gather_code(<major>, 'pg_statio_all_tables') can cast to text[]::cat_snap.raw_statio_all_tables[]
+ok 157 - Verify cat_snap.gather_code(<major>, 'pg_tablespace') can cast to text[]::cat_snap.raw_tablespace[]
+ok 158 - Verify cat_snap.gather_code(<major>, 'pg_timezone_abbrevs') can cast to text[]::cat_snap.raw_timezone_abbrevs[]
+ok 159 - Verify cat_snap.gather_code(<major>, 'pg_timezone_names') can cast to text[]::cat_snap.raw_timezone_names[]
+ok 160 - Verify cat_snap.gather_code(<major>, 'pg_transform') can cast to text[]::cat_snap.raw_transform[]
+ok 161 - Verify cat_snap.gather_code(<major>, 'pg_trigger') can cast to text[]::cat_snap.raw_trigger[]
+ok 162 - Verify cat_snap.gather_code(<major>, 'pg_ts_config') can cast to text[]::cat_snap.raw_ts_config[]
+ok 163 - Verify cat_snap.gather_code(<major>, 'pg_ts_config_map') can cast to text[]::cat_snap.raw_ts_config_map[]
+ok 164 - Verify cat_snap.gather_code(<major>, 'pg_ts_dict') can cast to text[]::cat_snap.raw_ts_dict[]
+ok 165 - Verify cat_snap.gather_code(<major>, 'pg_ts_parser') can cast to text[]::cat_snap.raw_ts_parser[]
+ok 166 - Verify cat_snap.gather_code(<major>, 'pg_ts_template') can cast to text[]::cat_snap.raw_ts_template[]
+ok 167 - Verify cat_snap.gather_code(<major>, 'pg_type') can cast to text[]::cat_snap.raw_type[]
+ok 168 - Verify cat_snap.gather_code(<major>, 'pg_user_mapping') can cast to text[]::cat_snap.raw_user_mapping[]
 ok 169 - SELECT cat_snap.snapshot_code('9.2', cluster_identifier := 'cluster id')
 ok 170 - SELECT cat_snap.snapshot_code('9.3', cluster_identifier := 'cluster id')
 ok 171 - SELECT cat_snap.snapshot_code('9.4', cluster_identifier := 'cluster id')

@@ -51,10 +51,11 @@ INSERT INTO gather_code_expected VALUES
   , ( 9.6, 'wait_event_type, wait_event, state, backend_xid, backend_xmin, query, NULL' )
 ;
 UPDATE gather_code_expected SET expected =
-  'SELECT row(datid, datname, pid, usesysid, usename, application_name, client_addr, client_hostname, client_port, backend_start, xact_start, query_start, state_change, '
+  'array( SELECT row(datid, datname, pid, usesysid, usename, application_name, client_addr, client_hostname, client_port, backend_start, xact_start, query_start, state_change, '
     || expected
-    || ') FROM pg_catalog.pg_stat_activity'
+    || ') FROM pg_catalog.pg_stat_activity )'
 ;
+--SELECT * FROM gather_code_expected;
 
 SELECT plan(
   2   -- entities
